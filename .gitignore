@@ -28,18 +28,23 @@ build/
 .gradle
 local.properties
 *.iml
+jetificableGroups.json
 
 # node.js
 #
 node_modules/
 npm-debug.log
 yarn-error.log
+package-lock.json
 
 # BUCK
 buck-out/
 \.buckd/
 *.keystore
 !debug.keystore
+
+# i18next-parser
+/app/locales/*_old.json
 
 # fastlane
 #
@@ -57,3 +62,46 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+.vscode/launch.json
+
+# Ruby gems
+ios/vendor/bundle/*
+android/vendor/bundle/*
+
+# Screenshots
+e2e/artifacts/*
+
+# VSCode
+.vscode/*
+
+# Local iOS build artifacts
+ios/COVIDSafePaths.ipa
+ios/COVIDSafePaths.app
+ios/COVIDSafePaths.app.dSYM.zip
+
+ios/COVIDSafePaths-staging.ipa
+ios/COVIDSafePaths-staging.app
+ios/COVIDSafePaths-staging.app.dSYM.zip
+
+ios/COVIDSafePaths-bt.ipa
+ios/COVIDSafePaths-bt.app
+ios/COVIDSafePaths-bt.app.dSYM.zip
+
+ios/COVIDSafePaths-staging-bt.ipa
+ios/COVIDSafePaths-staging-bt.app
+ios/COVIDSafePaths-stating-bt.app.dSYM.zip
+
+# Local Android build artifacts
+android/app/src/main/assets/index.android.bundle
+android/app/release
+
+# Local Realm Artifact
+safepaths.realm
+
+# env files
+.env.*
+# private resources
+pathcheck-mobile-resources
+
+# swift packages
+ios/COVIDSafePaths.xcworkspace/xcshareddata/swiftpm/Package.resolved
